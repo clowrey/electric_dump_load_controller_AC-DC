@@ -1,0 +1,41 @@
+* C:\Users\hilo90mhz\Documents\GitHub\electric_dump_load_controller_AC-DC\LTspice_sim\dump_load_sim.asc
+V1 N001 0 15
+V2 N006 0 PULSE(0 8 0 10n 10n 1.9u 3.33u)
+M1 P001 Vgate 0 0 IPB039N10N3
+L1 NC_01 NC_02 10µ Rser=3m
+C1 Vbatt 0 10µ Rser=7m
+R1 N007 P001 1
+V3 Vgen 0 400
+D2 NC_03 NC_04 RF1001NS2D
+R2 Vbatt N008 0.01
+R3 Vgen N007 5
+R4 Vbatt 0 10
+V4 Vload 0 PULSE(0 8 0 10n 10n 50u 120.33u)
+M2 P002 Vload 0 0 IPB039N10N3
+R5 Vbatt P002 10
+XU1 NC_05 NC_06 NC_07 NC_08 NC_09 LT1013
+XU2 NC_10 NC_11 NC_12 NC_13 NC_14 LT1013
+V5 Vref 0 PULSE(0 15 0 2.5u 2.5u 1n 5u)
+C2 P003 Vfb 10p
+R6 Vbatt Vfb 100k
+R7 Vfb 0 3.5k
+XU3 N001 Vref Vc 0 0 0 VfbOut NC_15 LT1016
+A1 0 0 0 0 0 0 0 0 BUF Vhigh=12 Vlow=0
+V6 N002 0 6
+C3 NC_21 0 1µ
+XU4 N002 Vfb N001 N003 Vc LT1213
+R8 Vfb P004 40k
+C4 P004 Vc 10p
+R9 Vbatt P003 10k
+A2 VfbOut 0 0 0 0 0 Vgate 0 BUF Vhigh=12 Vlow=0 Ref=1.5
+D1 N007 N008 D
+V7 N003 0 -0.2
+.model D D
+.lib C:\Users\hilo90mhz\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\hilo90mhz\Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 0.5m startup
+.lib LTC.lib
+.backanno
+.end
