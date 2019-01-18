@@ -1,36 +1,53 @@
 Circuit: * C:\Users\hilo90mhz\Documents\GitHub\electric_dump_load_controller_AC-DC\LTspice_sim\dump_load_sim.asc
 
-A1: all pins shorted together -- ignoring.
-WARNING: Specified period is not longer than the sum of Trise, Tfall, and Ton for v5.  Increasing period to 5.001e-006
-WARNING: Node NC_02 is floating.
-WARNING: Node NC_04 is floating.
-WARNING: Node NC_21 is floating.
+WARNING: Specified period is not longer than the sum of Trise, Tfall, and Ton for v5.  Increasing period to 5.0001e-005
+WARNING: Specified period is not longer than the sum of Trise, Tfall, and Ton for v4.  Increasing period to 0.00800002
+WARNING: Node NC_18 is floating.
+WARNING: Node NC_20 is floating.
+WARNING: Node NC_22 is floating.
+WARNING: Node NC_24 is floating.
+WARNING: Node NC_26 is floating.
+WARNING: Node NC_28 is floating.
+WARNING: Node NC_30 is floating.
 
-WARNING: Less than two connections to node N006.  This node is used by V2.
-WARNING: Less than two connections to node NC_01.  This node is used by L1.
-WARNING: Less than two connections to node NC_02.  This node is used by L1.
-WARNING: Less than two connections to node NC_03.  This node is used by D2.
-WARNING: Less than two connections to node NC_04.  This node is used by D2.
-WARNING: Less than two connections to node NC_21.  This node is used by C3.
+WARNING: Less than two connections to node NC_01.  This node is used by V3.
+WARNING: Less than two connections to node N010.  This node is used by R5.
+WARNING: Less than two connections to node NC_17.  This node is used by LP1.
+WARNING: Less than two connections to node NC_18.  This node is used by LP1.
+WARNING: Less than two connections to node NC_19.  This node is used by LS1.
+WARNING: Less than two connections to node NC_20.  This node is used by LS1.
+WARNING: Less than two connections to node NC_21.  This node is used by LP2.
+WARNING: Less than two connections to node NC_22.  This node is used by LP2.
+WARNING: Less than two connections to node NC_23.  This node is used by LP3.
+WARNING: Less than two connections to node NC_24.  This node is used by LP3.
+WARNING: Less than two connections to node NC_25.  This node is used by LS2.
+WARNING: Less than two connections to node NC_26.  This node is used by LS2.
+WARNING: Less than two connections to node NC_27.  This node is used by LS3.
+WARNING: Less than two connections to node NC_28.  This node is used by LS3.
+WARNING: Less than two connections to node NC_29.  This node is used by R10.
+WARNING: Less than two connections to node NC_30.  This node is used by R10.
+WARNING: Less than two connections to node NC_31.  This node is used by V2.
 Direct Newton iteration for .op point succeeded.
-Heightened Def Con from 0.000215043 +++++++++++++++++++++++++++++++++++to 0.000215043
-Heightened Def Con from 0.000215043 ++++++++++++++++++to 0.000215048
+Heightened Def Con from 0.0250005 to 0.0250005
 
-Date: Mon Jan 07 21:10:29 2019
-Total elapsed time: 2.496 seconds.
+start: 20ms=0.02
+
+
+Date: Sun Jan 13 11:56:41 2019
+Total elapsed time: 29.753 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 155715
-traniter = 155693
-tranpoints = 42951
-accept = 31998
-rejected = 11008
-matrix size = 74
-fillins = 42
+totiter = 1493597
+traniter = 1493564
+tranpoints = 388340
+accept = 281983
+rejected = 106358
+matrix size = 95
+fillins = 75
 solver = Normal
-Thread vector: 26.3/7.9[4] 5.1/2.9[4] 2.5/1.1[4] 0.5/1.2[1]  2592/500
-Matrix Compiler1: 6.46 KB object code size  2.1/1.1/[0.7]
-Matrix Compiler2: 6.71 KB object code size  0.6/1.0/[0.5]
+Thread vector: 20.4/9.5[5] 4.9/2.8[5] 2.4/1.6[5] 0.6/1.6[1]  2592/500
+Matrix Compiler1: 9.96 KB object code size  1.7/1.1/[0.5]
+Matrix Compiler2: 8.73 KB object code size  0.7/1.2/[0.5]
 
